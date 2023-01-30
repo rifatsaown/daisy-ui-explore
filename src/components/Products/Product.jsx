@@ -9,7 +9,6 @@ const Product = () => {
       .then((res) => res.json())
       .then((data) => setMobile(data.data));
   }, []);
-  console.log(mobile);
   return (
     <div className="mx-10 mt-10">
       <div className="">{mobile.length === 0 && <Loader />}</div>
