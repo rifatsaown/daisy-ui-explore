@@ -5,7 +5,7 @@ import Loader from "../Loader/Loader";
 const Product = () => {
   const [mobile, setMobile] = useState([]);
   useEffect(() => {
-    fetch("http://ec2-54-196-32-106.compute-1.amazonaws.com/api/v1/products")
+    fetch("https://gorardim.com/api/v1/products")
       .then((res) => res.json())
       .then((data) => setMobile(data.data));
   }, []);
